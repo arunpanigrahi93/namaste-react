@@ -10,5 +10,8 @@ const heading = React.createElement(
   ])
 );
 
+//jsx
+const jsxHeading = <h1 id="heading">Namste from jsx</h1>;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(jsxHeading);
