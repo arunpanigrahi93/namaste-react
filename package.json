@@ -1,0 +1,22 @@
+{
+  "name": "namaste_react_practice",
+  "version": "1.0.0",
+  "description": "practice react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunpanigrahi93/namaste-react.git"
+  },
+  "author": "Arun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunpanigrahi93/namaste-react/issues"
+  },
+  "homepage": "https://github.com/arunpanigrahi93/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
