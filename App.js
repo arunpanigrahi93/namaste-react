@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // use correct import for React 18+
 
+//core react
 const heading = React.createElement(
   "div",
   { id: "parent" },
