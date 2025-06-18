@@ -1,18 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // use correct import for React 18+
 
-//core react
-const heading = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { key: "h1" }, "I'm from h1"),
-    React.createElement("h2", { key: "h2" }, "I'm from h2"),
-  ])
-);
+//react element to convert functional component
+//const heading = <h1>Hello</h1>
 
-//jsx
-const jsxHeading = <h1 id="heading">Namste from jsx</h1>;
+// component
+const Heading = () => <h1>Hello </h1>;
+
+//component
+
+const HeadingComponent = () => {
+  return (
+    <div>
+      <Heading />
+      <h1>Hello from functional component</h1>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
+
+//component inside other component is called Component Composition
