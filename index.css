@@ -1,3 +1,22 @@
-#header{
-    color: red;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black ;
 }
+.logo {
+  width: 100px; /* instead of 7%, use fixed size */
+  object-fit: contain;
+}
+.nav-items {
+    padding: 0px 20px;
+}
+.nav-items > ul {
+    font-size: 14px;
+    display: flex;
+    list-style-type:none;
+
+} 
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+} 
