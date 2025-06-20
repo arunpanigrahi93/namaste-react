@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import { resturantObj } from "../utils/resturantObj";
 import { useState, useEffect } from "react";
+import Shimmer from "./Shimmer";
 const Body = () => {
   const [filterData, setFilterData] = useState([]);
   const handleClick = () => {
@@ -26,7 +27,7 @@ const Body = () => {
   };
 
   if (filterData.length === 0) {
-    return <h2>Loading...</h2>;
+    return <Shimmer />;
   }
 
   return (
